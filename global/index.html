@@ -37,7 +37,7 @@
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<!-- Custom css -->
 		<link type="text/css" rel="stylesheet" href="css/layout.css">
-		<link type="text/css" id="colors" rel="stylesheet" href="css/green.css">
+		<link type="text/css" id="colors" rel="stylesheet" href="css/custom.css">
 		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 		<script src="js/modernizr-2.6.1.min.js"></script>
 		<!-- Favicons
@@ -52,33 +52,9 @@
 			padding:0;
 		}
 		.navbar-brand img {
-			max-height: 80px;
+			max-height: 50px;
 		}
-		@media screen and (max-width: 767px) {
-			.navbar-nav > li > a i {
-				padding: 0;
-			}
-		}
-		@media screen and (min-width: 768px) {
-			.navbar-nav > li > a {
-				font-size: 9pt;
-
-			}
-			.navbar-nav > li > a {
-				max-width: 120px;
-				text-align: center;
-			}
-		}
-		@media screen and (min-width: 1024px) {
-			.navbar-nav > li > a {
-				font-size: 11pt;
-
-			}
-			.navbar-nav > li > a {
-				max-width: 140px;
-				text-align: center;
-			}
-		}
+		
 		footer {
 			font-size: 90%;
 			padding: 15px 0;
@@ -108,22 +84,29 @@
 				<div class="container">
 					<nav class="navbar navbar-default scrollMenu" role="navigation">
 						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-							<a class="navbar-brand" href="index.html"><img src="images/kdh/kdh-logo.png" alt="Ashley website template"/></a> </div>
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="index.html">
+								<img src="images/kdh/kdh-logo.png" alt="Ashley website template"/>
+							</a>
+						</div>
 							<div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
 								<ul class="nav navbar-nav pull-right">
-									<li class="active"><a href="#home"><i class="icon-home-outline"></i>Home</a> </li>
-									<!--<li><a href="#news"><i class="icon-comment"></i>News</a> </li>-->
-									<li><a href="#services"><i class="icon-thumbs-up"></i>Service</a> </li>
-									<li><a href="#about"><i class="icon-star"></i>About</a> </li>
-									<li><a href="#works"><i class="icon-popup-1"></i>Success Stories</a> </li>
-									<li><a href="#team"><i class="icon-users"></i>Our Team</a> </li>
-									<li><a href="#manufactory"><i class="fa fa-cubes"></i>Manufactory</a> </li>
-									<li><a href="http://www.koobe.com.tw/en-us/index.htm" target="_top"><i class="icon-globe"></i>KOOBE</a> </li>
-									<li><a href="#contactSlice"><i class="icon-mail"></i>Contact</a> </li>
+									
+									<li class="active"><a href="#home"><i class="">Home</i></a> </li>
+									<!-- <li><a href="#services"><i class="">Service</i></a> </li> -->
+									<li><a href="#about"><i class="">About</i></a> </li> 
+									<li><a href="#works"><i class="">Success Stories</i></a> </li>
+									<li><a href="#team"><i class="">Our Team</i></a> </li>
+									<li><a href="#manufactory"><i class="">Manufactory</i></a> </li>
+									<li><a href="http://www.koobe.com.tw/en-us/index.htm" target="_blank"><i class="">KOOBE</i></a> </li>
+									<li><a href="#contactSlice"><i class="">Contact</i></a> </li>
 								</ul>
 							</div>
-
 						</nav>
 					</div>
 				</header>
@@ -307,15 +290,18 @@
 				</section>
 				-->
 				<!-- news -->
-				<!-- services -->
+				
+				<!-- services 
 				<section class="slice color1" id="services">
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12">
 								<h1>Our services</h1>
-								<h2 class="subTitle">We are doing a couple of things you might be interested in</h2>
+								<h2 class="" style="text-align: center;">We are doing a couple of things you might be interested in</h2>
 							</div>
+							<div class="col-sm-12" style="height:30px;"> </div>
 						</div>
+						
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="row boxFeature">
@@ -361,7 +347,7 @@
 							</div>
 						</div>
 					</div>
-				</section>
+				</section>-->
 				<!-- services --> 
 
 				<!--
@@ -375,18 +361,20 @@
 					</div>
 				</div>
 				-->
-				<div style="background-color: #7DC24F; height: 150px">&nbsp;</div>
+				<div style="background-color: #7DC24F; height: 2px">&nbsp;</div>
 
 				<section class="slice" id="about">
+					
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12">
-								<h1 class="noSubtitle">About us</h1>
+								<h1 class="">About us</h1>
 							</div>
+							<div class="col-sm-12" style="height:30px;"> </div>
 						</div>
 						<div class="row">
-							<div class="col-sm-5"> <img src="images/kdh/kdh-aboutus.png" alt="services" class="img-responsive"> </div>
-							<div class="col-sm-7">
+							<!-- <div class="col-sm-5"> <img src="images/kdh/kdh-aboutus.png" alt="services" class="img-responsive"> </div> -->
+							<div class="col-sm-12">
 								<p>KDH delivers to anyone who's interested in joining the business various solutions of online ebook service, portable devices, including eReaders, tablets, and electronic book-bags. Well aware potential customers usually lack IT expertise, KDH Design House dedicates itself to make the best use of joint­development partners' resources, experiences, advantages and expertise to flourish in the mobile consumer electronics business.</p>
 								<p>KDH's hybrid DNA of the engineering house and the service vendor guarantees the most ideal solution for product design optimized for the mobile devices. Turning your requirements of marketing purposes into the technical and manufacturing specifications. We design and manage your projects in hardware and software development from the beginning to mass production, from logistics to the after­sales technical support process.</p>
 								<p>Founded in 2009, KDH Design House has formed a strong strategic partnership with the top tier Electronic Manufacturing Service (EMS) enterprises in the world, and thus has absolute advantages in manufacturing and quality assurance for various products. We play the role of your exclusive design house, as a single liaison that manages projects and the resources allocation in different parties for you. For a better local sales support, KDH was authorized by KOOBE since 2013 as the sales representative to manage the business development sustainable in the European market.</p>
@@ -395,6 +383,7 @@
 					</div>
 				</section>
 
+				<div style="background-color: #7DC24F; height: 2px">&nbsp;</div>
 <!--
 				<section class="pricing slice color1">
 					<div class="container">
@@ -505,8 +494,9 @@
 					<div class="container clearfix">
 						<div class="row">
 							<div class="col-sm-12">
-								<h1 class="noSubtitle">Success Stories</h1>
+								<h1 class="">Success Stories</h1>
 							</div>
+							<div class="col-sm-12" style="height:30px;"> </div>
 							<!--
 							<nav id="filter" class="col-md-12 text-center">
 								<ul>
@@ -540,7 +530,7 @@
 										<section class="boxContent">
 											<h3>Electronic Paper Reader</h3>
 											<p>Preceding noted brand owners like amazon, SONY and Kobo by almost three years, KDH is the first Electronic Paper Display (EPD) reader maker in the world that adopted Neonode Optical Touch in e­reader design (providing light­weight design, better contrast and less display glare than capacitive touch), as well as one of the first to use soft­touch finishing (providing great feel and texture). KDH provides various designs and flexible service coverage, ranging from full coverage to pure software/hardware designs. 2012 forecast of EPD e­readers done by KDH is roughly 0.5 million. <br>
-												<a href="portfolio-project-fullwidth-image.html" class="moreLink portfolioSheet">&rarr; read more</a>
+												<!-- <a href="portfolio-project-fullwidth-image.html" class="moreLink portfolioSheet">&rarr; read more</a>  -->
 											</p>
 										</section>
 									</article>
@@ -564,7 +554,7 @@
 										<section class="boxContent">
 											<h3>Android Tablet</h3>
 											<p>One of the most known customers of KOOBE Design House, a noted brand owner in the US, sold more than hundreds thousands sets of 8­inch Android tablet done by KDH. Featuring high quality of audio­visual user experiences, customized UI and free online TV for three months with fairly affordable price, the product came sales figure which satisfied the customer so much that a deal of the newer generation product has already been offered to KOOBE Design House. <br>
-												<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>
+												<!-- <a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>  -->
 											</p>
 										</section>
 									</article>
@@ -590,7 +580,7 @@
 										<section class="boxContent">
 											<h3>Mirasol eBook Reader</h3>
 											<p>For years, KDH has been dedicated itself to the latest technologies that enhance usability of portable devices, one of which is mirasol display. As one of the few partners chosen by Qualcomm MEMS Technology Inc, KDH managed to combine Chinese martial art literature and the cutting­edge technology with customized look and feel as well as a local online bookstore. <br>
-												<a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>
+												<!-- <a href="portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>  -->
 											</p>
 										</section>
 									</article>
@@ -614,7 +604,7 @@
 										<section class="boxContent">
 											<h3>Dual Display School Tablet</h3>
 											<p>KDH is one of the very few ODM makers of dual display portable devices for education, and remains the only one capable of doing so. As most of the education solution provides are troubled by whether to adopt EPD or LCD, for EPD is better for reading than LCD while LCD does better job than EPD in motion and color display, KDH simply provides both. Featuring various user scenarios including book mode, laptop mode, and tablet mode, the mission critical dual display school tablet not only come with benefits of both display, but allow students to do hand writing notes on EPD display and share them via wireless connection. KDH is the only supplier with sufficient know­how and experiences in the world to provide such a perfect solution for education. <br>
-												<a href="portfolio-project-fullwidth-carousel.html" class="moreLink portfolioSheet">&rarr; read more</a> 
+												<!-- <a href="portfolio-project-fullwidth-carousel.html" class="moreLink portfolioSheet">&rarr; read more</a>  --> 
 											</p>
 										</section>
 									</article>
@@ -634,16 +624,23 @@
 						</div>
 					</div>
 					-->
-					<div style="background-color: #7DC24F; height: 150px">&nbsp;</div>
+					<div style="background-color: #7DC24F; height: 2px">&nbsp;</div>
 
 					<section class="slice" id="team">
 						<div class="container">
 							<div class="row">
 								<div class="col-xs-12">
-									<h1 class="noSubtitle">Meet our team</h1>
+									<h1 class="">Meet our team</h1>
 								</div>
-								<div class="col-xs-12">
-									<img src="images/kdh/kdh-team.png" alt="team" class="img-responsive" />
+								
+								<div class="col-xs-12 col-md-4" style="padding-top: 30px">
+									<img src="images/kdh/kdh-team0.png" alt="team" class="img-responsive" />
+								</div>
+								<div class="col-xs-12 col-md-4" style="padding-top: 30px">
+									<img src="images/kdh/kdh-team1.png" alt="team" class="img-responsive" />
+								</div>
+								<div class="col-xs-12 col-md-4" style="padding-top: 30px">
+									<img src="images/kdh/kdh-team2.png" alt="team" class="img-responsive" />
 								</div>
 								<!--
 								<div class="col-sm-4">
@@ -705,6 +702,7 @@
 						</div>
 					</section>
 
+					<!-- 
 					<div id="paralaxSlice1" data-stellar-background-ratio="0.5" style="background-position: 50% -47.4921875px;">
 						<div class="maskParent">
 							<div class="paralaxMask"></div>
@@ -713,14 +711,16 @@
 								<blockquote class="bigTitle">Being a famous designer<br>is like being a famous dentist<br><small>NOREEN MORIOKA</small></blockquote>
 							</div>
 						</div>
-					</div>
+					</div>  -->
+
+					<div style="background-color: #7DC24F; height: 2px">&nbsp;</div>
 
 					<section class="slice color1" id="manufactory">
 						<div class="container">
 							<div class="row">
 								<div class="col-xs-12">
-									<h1>Manufactory</h1>
-									<h2 class="subTitle" style="font-size:16pt;line-height:1.2em">Pegatron, Suzhou<br/>Foxconn, Nanning</h2>
+									<h1>Manufacturing</h1>
+									<h2 class="" style="font-size:16pt;line-height:1.2em; text-align:center;">Pegatron, Suzhou<br/>Foxconn, Nanning</h2>
 								</div>
 							</div>
 							<div class="row">
@@ -754,14 +754,14 @@
 					</div>
 					-->
 
-					<div style="background-color: #7DC24F; height: 150px">&nbsp;</div>
+					<div style="background-color: #7DC24F; height: 2px">&nbsp;</div>
 
 					<section class="slice" id="contactSlice">
 						<div class="container">
 							<div class="row">
 
 							<div class="col-sm-12">
-								<h1 class="noSubtitle" style="padding-bottom:20px">Contact us</h1>
+								<h1 class="" style="padding-bottom:20px">Contact us</h1>
 							</div>
 							<div class="col-sm-12">
 							<!--
@@ -783,9 +783,9 @@
 						<div class="col-sm-8">
 							<h2 style="font-size:22px; border-bottom: 1px solid #7DC24F;text-align: center; margin: 20px 80px">Customer Support</h2>
 							<p class="text-center"><strong>Paris</strong></p>
-							<p class="text-center">Alexandre Benhamou, <a href="mailto:alexandre@kdhservice.com">alexandre@kdhservice.com</a></p>
+							<p class="text-center">Alexandre Benhamou<br/><a href="mailto:alexandre@kdhservice.com">alexandre@kdhservice.com</a></p>
 							<p class="text-center"><strong>Taiwan</strong></p>
-							<p class="text-center">Younger L. Liang, <a href="mailto:younger@kdhservice.com">younger@kdhservice.com</a></p>
+							<p class="text-center">Younger L. Liang<br/><a href="mailto:younger@kdhservice.com">younger@kdhservice.com</a></p>
 						</div>
 						<div class="col-sm-2">
 						</div>
@@ -849,45 +849,28 @@
 						<section id="mainFooter">
 							<div class="container" id="footer">
 								<div class="row">
-									<div class="col-sm-6">
+									<div class="col-sm-12" style="text-align: right; font-size: 0.9em; color:#777;">
 									<!--
 										<div class="footerWidget">
 											<img src="images/neko-logo.png" alt="latest Little Neko news" id="footerLogo">
 											<p><a href="http://www.little-neko.com" title="Little Neko, website template creation">Little Neko</a> is a web design and development studio. We build responsive HTML5 and CSS3 templates, integrating best web design practises and up-to-date web technologies to create great user experiences. We love what we do and we hope you too ! </p>
 										</div>
 										-->
+										Copyright © 2014 KDH - Design Service Inc.
 									</div>
-									<div class="col-sm-6">
-										<p class="pull-right">Copyright © 2014 KDH - Design Service Inc.</p>
-
-<!--
-
-										<div class="footerWidget">
-
-
-											<h3>Little NEKO</h3>
-											<address>
-												<p> <i class="icon-location"></i>&nbsp;77 Mass. Ave., E14/E15<br>
-													Cambridge, MA 02139-4307 USA <br>
-													<i class="icon-phone"></i>&nbsp;615.987.1234 <br>
-													<i class="icon-mail-alt"></i>&nbsp;<a href="mailto:little@little-neko.com">little@little-neko.com</a> </p>
-												</address>
-
-										</div>
-												-->
-
-									</div>
+									
 								</div>
 							</div>
 						</section>
 					</footer>
+					<!-- 
 					<section  id="footerRights">
 						<div class="container">
 							<div class="row">
 								<div class="col-sm-6">
 								<!--
 									<p>Copyright © 2014 <a href="#" target="blank">KDH</a> / All rights reserved.</p>
-									-->
+									
 								</div>
 								<div class="col-sm-6">
 									<ul class="socialNetwork pull-right" style="display:none">
@@ -900,7 +883,7 @@
 								</div>
 							</div>
 						</div>
-					</section>
+					</section> -->
 					<!-- End footer -->
 				</div>
 				<!-- global wrapper -->
