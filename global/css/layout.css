@@ -1057,3 +1057,27 @@ body#comingSoon{padding-top:0; background: #4B4A4A}
 
 /* END MISCELANIOUS
 ================================================== */
+
+.team-member-right {
+	text-align: right;
+	letter-spacing:1px;
+	font-style: normal;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.team-member-title {
+	line-height: 0.3em;
+	font-size: 0.8em;
+}
+
+.team-member-sub {
+	font-weight: 600;
+	font-size: 1.1em;
+}
+
+.team-member-font {
+	letter-spacing:1px;
+	line-height: 1.8em;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3em;
+}
