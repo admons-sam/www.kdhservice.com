@@ -127,7 +127,7 @@
 		font-family: Helvetica;
 	}
 	.about-title {
-		background-image: url('images/2_about/red.png');
+		background-image: url('images/red.png');
 		font-weight: bold;
 		font-size: 44px;
 		line-height: 44px;
@@ -159,7 +159,7 @@
 		text-align: left;	
 	}
 	.event-title {
-		background-image: url('images/3_event/green.png');
+		background-image: url('images/green.png');
 		font-size: 40px;
 		line-height: 40px;
 		padding: 18px 0 14px 40px;
@@ -174,6 +174,59 @@
 	.event-subtitle {
 		font-weight: bold;
 		font-size: 18px;
+	}
+	
+	#services {
+		background-color: #FFF;
+	}
+	.services-box {
+		margin-top: 95px;
+		margin-bottom: 48px;
+		display: inline-block;
+		width: 100%;
+	}
+	.services-title {
+		background-image: url('images/yellow.png');
+		font-size: 40px;
+		line-height: 40px;
+		padding: 18px 0 14px 40px;
+		color: #FFF;
+		width: 350px;
+		height: 70px;
+		display: inline-block;
+		float: left;
+		transform: rotate(-90deg);	
+		margin-top: 140px;
+		margin-left: -88px;
+	}
+	.services-container-1 {
+		float: left;		
+	}
+	.services-container-2 {
+		float: left;
+	}
+	.img-list {
+		width: 212px;
+		float: left;
+	}
+	.img-list > img{
+		width: 212px;
+		height: 212px;
+	}
+	.services-container-1 .msg-list {
+		background-image: url('images/green.png');
+		width: 212px;
+		float: left;
+	}
+	.services-container-2 .msg-list {
+		background-image: url('images/red.png');
+		width: 212px;
+		float: left;
+	}
+	.msg {
+		width: 212px;
+		color: #FFF;
+		padding: 0 24px;
 	}
 	
 	.styleSwitcher {
@@ -331,60 +384,90 @@
 		</section> <!-- #/event -->
 		
 		<!-- services -->
-		<section class="slice color1" id="services">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<h1>Our services</h1>
-						<h2 class="" style="text-align: center;">We are doing a couple of things you might be interested in</h2>
+		<section class="slice" id="services">
+			<div class="services-box">
+				
+				<div class="services-title">Our services</div>
+				<div class="services-container-1">
+					<div class="img-list">
+						<img src="images/4_service/service_a.png" style="margin-bottom: 10px;" />
+						<img src="images/4_service/service_b.png" style="margin-bottom: 10px;" />
+						<img src="images/4_service/service_c.png" />
 					</div>
-					<div class="col-sm-12" style="height:30px;"> </div>
+					<div class="msg-list">
+						<div class="msg" style="margin-bottom: 10px;">
+							KDH offer a Full Service digital
+							helmet design. We applied
+							the best-in-industry design
+							methodology using the latest in
+							Computer Aided Design software,
+							and 3D prototyping technology
+							to make sure our design
+							fit into different types of motorcycle
+							helmet.
+						</div>
+						<div class="msg" style="margin-bottom: 10px;">
+							KDH owns an in-house optic
+							design team able to make different
+							HUD design at different
+							positions and angles inside the
+							helmet and project focused
+							display images to the
+							motorcyclist.
+						</div>
+						<div class="msg">
+							KDH sensors collects data from<br/>
+							the motorcycle and parts e.g. tires,
+							and the road & weather conditions
+							to generate calculated warning
+							signals to motorcyclist which to
+							prevent accidents at slippery road.
+							The accident caused by the road
+							condition accounts approximately
+							67% of all traffic accidents in
+							recent years.
+						</div>
+					</div>
+				</div>
+				<div class="services-container-2">
+					<div class="img-list">
+						<img src="images/4_service/service_d.png" style="margin-bottom: 10px;" />
+						<img src="images/4_service/service_e.png" style="margin-bottom: 10px;" />
+						<img src="images/4_service/service_f.png" />
+					</div>
+					<div class="msg-list">
+						<div class="msg" style="margin-bottom: 10px;">
+							Using the gestural interface
+							and voice control, an intuitive
+							UI displays the supportive
+							information on the HUD and
+							assist the motorcyclist to play
+							music, answer phone calls and
+							watch front & rear camera
+							views anytime.
+						</div>
+						<div class="msg" style="margin-bottom: 10px;">
+							KDH Testing Procedure provides
+							our helmet design a
+							reliable testing process while
+							complying to the latest helmet
+							safety regulations, and electronic
+							certification tests.
+						</div>
+						<div class="msg">
+							KDH will connect the motorcyclists
+							and car drivers to the
+							cloud and manage to calculate
+							data generated from the helmet
+							devices and camera images in
+							real time. All content created
+							will become a real asset for
+							safe drive with useful data, and
+							also for security control.
+						</div>
+					</div>
 				</div>
 				
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="row boxFeature">
-							<div class="col-xs-3">
-								<i class="icon-heart iconBig"></i>
-							</div>
-							<div class="col-xs-9" style="padding-top:20px">
-								<h2>Application GUI Design</h2>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="row boxFeature">
-							<div class="col-xs-3">
-								<i class="icon-plane-outline  iconBig"></i>
-							</div>
-							<div class="col-xs-9" style="padding-top:20px">
-								<h2>Green Energy Technology</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="row boxFeature">
-							<div class="col-xs-3">
-								<i class="icon-resize-full-outline iconBig"></i>
-							</div>
-							<div class="col-xs-9" style="padding-top:20px">
-								<h2>Firmware Integration</h2>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="row boxFeature">
-							<div class="col-xs-3">
-								<i class="icon-edit iconBig"></i>
-							</div>
-							<div class="col-xs-9" style="padding-top:20px">
-								<h2>Tier ­ One Manufacturing Partners With Foxconn &amp; Pegatron</h2>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</section> <!-- #/services --> 
 
