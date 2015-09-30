@@ -47,34 +47,58 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 	<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
-	<style type="text/css">
+	<style type="text/css">	
+	@media screen and (max-width: 767px) { 
+		/* screen-xs (Phones) */ 
+	}
+	@media screen and (min-width: 768px) and (max-width: 991px) { 
+		/* screen-sm (Tablets) */
+	}
+	@media screen and (min-width: 992px) and (max-width: 1199px) { 
+		/* screen-md (Desktops) */
+	}
+	@media screen and (min-width: 1200px) { 
+		/* screen-lg (Desktops) */
+	}
+
 	body {
 		padding: 0;
+		font-family: Helvetica;
 	}
+
+	footer {
+		font-size: 90%;
+		padding: 15px 0;
+	}
+	#footer.container {
+		padding: 0;
+	}
+
+	.styleSwitcher {
+		display: none;
+	}
+
 	
 	#mainHeader {
 		background: url('images/white60.png');
 	}
-	
-	.header-container {
-		padding: 0 52px;
+
+	.navbar-brand {
+		padding:0;
+		height: 80px;
 	}
 	
-	#header_logo {
+	.navbar-logo > img {
 		position: absolute;
 		left: 50%;
 		margin: 10px 0 0 -29px;
 		max-height: 58px;
 	}
 	
-	.navbar-brand {
-		padding:0;
-	}
-	
 	.navbar-nav > li > a {
-		margin-top: 30px;
 		overflow-y: hidden;
 		height: 20px;
+		margin-top: 30px;
 	}
 	
 	.navbar-nav > li > a i {
@@ -101,38 +125,58 @@
 		background: none;
 		color: #000;
 	}
-	
-	footer {
-		font-size: 90%;
-		padding: 15px 0;
-	}
-	#footer.container {
-		padding: 0;
-	}
 
+	section img {
+		width: 100%;
+	}
+	
+	.red {
+		background-image: url('images/red.png');
+		color: #FFF;
+	}
+	.green {
+		background-image: url('images/green.png');
+		color: #FFF;
+	}
+	.yellow {
+		background-image: url('images/yellow.png');
+		color: #FFF;
+	}
+	.grey {
+		background-image: url('images/grey.png');
+		color: #3A3939;
+	}
+	
+	.section-title {
+		font-weight: bold;
+		font-size: 44px;
+		line-height: 44px;
+	}
+	
+	.container-fluid .row {
+		margin: 0;
+	}
+	.container-fluid .row .col-first {
+		padding-left: 0;
+	}
+	.container-fluid .row .col-last {
+		padding-right: 0;
+	}
+	
 	#home {
 		padding: 0;
 	}
-	
+
 	#about {
 		background-image: url('images/2_about/About.png');
 		background-size: 100% auto;
 		border-top: 2px solid #FFF;
-	}
-	.about-box {
-		width: 500px;
-		margin-top: 200px;
-		margin-bottom: 270px;
 		text-align: right;
-		font-family: Helvetica;
+		padding-top: 266px;
+		padding-bottom: 336px;
 	}
 	.about-title {
-		background-image: url('images/red.png');
-		font-weight: bold;
-		font-size: 44px;
-		line-height: 44px;
-		padding: 14px 20px;
-		color: #FFF;
+		padding: 14px 20px 12px;
 	}
 	.about-container {
 		padding-top: 34px;
@@ -146,24 +190,15 @@
 	#event {
 		background-image: url('images/3_event/Event.png');
 		background-size: 100% auto;
-		border-top: 2px solid #FFF;
 		width: 100%;
 		display: inline-block;
-	}
-	.event-box {
-		float: right;
-		width: 600px;
-		margin-top: 126px;
-		margin-bottom: 240px;
+		border-top: 2px solid #FFF;
+		padding-top: 126px;
+		padding-bottom: 240px;
 		font-family: Helvetica;
-		text-align: left;	
 	}
 	.event-title {
-		background-image: url('images/green.png');
-		font-size: 40px;
-		line-height: 40px;
-		padding: 18px 0 14px 40px;
-		color: #FFF;
+		padding: 16px 0 14px 40px;
 	}
 	.event-container {
 		padding-top: 34px;
@@ -178,69 +213,166 @@
 	
 	#services {
 		background-color: #FFF;
-	}
-	.services-box {
-		margin-top: 95px;
-		margin-bottom: 48px;
-		display: inline-block;
-		width: 100%;
+		padding-top: 95px;
+		padding-bottom: 48px;
 	}
 	.services-title {
-		background-image: url('images/yellow.png');
-		font-size: 40px;
-		line-height: 40px;
-		padding: 18px 0 14px 40px;
-		color: #FFF;
 		width: 350px;
-		height: 70px;
-		display: inline-block;
-		float: left;
-		transform: rotate(-90deg);	
+		padding: 16px 0 10px 40px;
+		-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+			-ms-transform: rotate(-90deg); /* IE 9 */
+				transform: rotate(-90deg);
 		margin-top: 140px;
-		margin-left: -88px;
+		margin-left: -110px;
 	}
-	.services-container-1 {
-		float: left;		
-	}
-	.services-container-2 {
-		float: left;
-	}
-	.img-list {
-		width: 212px;
-		float: left;
-	}
-	.img-list > img{
-		width: 212px;
-		height: 212px;
-	}
-	.services-container-1 .msg-list {
-		background-image: url('images/green.png');
-		width: 212px;
-		float: left;
-	}
-	.services-container-2 .msg-list {
-		background-image: url('images/red.png');
-		width: 212px;
-		float: left;
-	}
-	.msg {
-		width: 212px;
+	#services .msg {
+		height: 247px;
 		color: #FFF;
-		padding: 0 24px;
 	}
 	
-	.styleSwitcher {
-		display: none;
+	#features {
+		background-image: url('images/5_features/features.png');
+		background-size: 100% auto;
+		padding: 112px 0 856px;
+	}
+	.features-title {
+		padding: 14px 70px 12px;
 	}
 	
-	.imgWrapper {
-		padding: 10px 22px 5px 22px;
+	#partner {
+		background-image: url('images/6_partner/partners.png');
+		background-size: 100% auto;
+		padding-top: 148px;
+		padding-bottom: 23px;
+		border-top: 2px solid #FFF;
+	}
+	#partner img {
+		margin-bottom: 10px;
+	}
+	#Partners_a { width: 100%; }
+	#Partners_b
+	, #Partners_c
+	, #Partners_d { height: 100px; }
+	#logo_agv 
+	, #logo_GogoroLogo
+	, #logo_foxconn{ height: 203px; }
+	.logo-rim {
+		border: 1px solid #989898;
+	}
+	.partner-title {
+		padding: 16px 0 10px 15px;
+		margin-top: 25%;
+	}
+	.partner-container {
+		padding-top: 45%;
+		font-size: 20px;
+		color: #3A3939;
 	}
 	
-	.stories-pic {
-		border: 1px solid #D0D3D3;
+	#organisation {
+		background-image: url('images/7_team/team.png');
+		background-size: 100% auto;
+		padding-top: 8%;
+		padding-bottom: 5%;
+		border-top: 2px solid #FFF;
 	}
-
+	#team_A 
+	, #team_B
+	, #team_C 
+	, #team_D {
+		height: 172px;
+	}
+	.organisation-title {
+		text-align: right;
+		padding: 14px 33px 10px;
+	}
+	.organisation-container {
+		font-size: 28px;
+		color: #3A3939;
+		padding-top: 5%;
+	}
+	#organisation .imgs {
+		margin-top: 30px;
+	}
+	#organisation .workers {
+		margin-top: 17px;
+	}
+	.team-yellow {
+		background-image: url('images/7_team/team_yellow.png');
+		background-size: 100% 100%;
+		padding: 90px 15px 84px 50px;
+		margin-left: -15px;
+		margin-right: 15px;
+	}
+	.team-green {
+		background-image: url('images/7_team/team_green.png');
+		background-size: 100% 100%;
+		padding: 90px 50px 84px 15px;
+		margin-left: 15px;
+		margin-right: -15px;
+	}
+	.worker-info {
+		color: #FFF;
+		text-align: center;
+	}
+	.worker-name {
+		font-size: 26px;
+		font-weight: bold;
+	}
+	.worker-function {
+		font-size: 16px;
+	}
+	.worker-info hr {
+		margin: 20px 0;
+	}
+	
+	#contact {
+		padding-top: 8%;
+		padding-bottom: 5%;
+	}
+	#contact_taipei {
+		margin-bottom: 6px;
+	}
+	#contact_map {
+		overflow: hidden; 
+		width: 100%;
+		height: 272px;
+	}
+	#gmap_canvas {
+		width: 100%;
+		height: inherit;
+	}
+	#gmap_canvas img{
+		max-width: none!important;
+		background: none!important
+	}
+	.container-address {
+		padding: 16px 15px 14px;
+		margin-bottom: 10px;
+	}
+	.container-input {
+		border-radius: 0;
+		padding: 16px 15px 14px;
+		font-size: 18px;
+		height: initial;
+	}
+	.container-button {
+		width: 100%;
+		border-radius: 0;
+		font-size: 18px;
+	}
+	#InputMessages {
+		height: 270px;
+	}
+	.form-control:focus {
+		background: #F1F1F1;
+	}
+	.btn {
+		background: #F1F1F1;
+	}
+	.btn:hover {
+		color: #3A3939;
+	}
 	</style>
 </head>
 <body data-spy="scroll" data-target="#scrollTarget" data-offset="150">
@@ -251,51 +383,44 @@
 	<div id="globalWrapper" class="localscroll">
 	
 		<!-- header -->
-		<header id="mainHeader" class="navbar-fixed-top" role="banner">
-			<div class="header-container">
-				<nav class="navbar navbar-default scrollMenu" role="navigation">
-					
+		<!-- <header id="mainHeader" class="navbar-fixed-top" role="banner"> -->
+		<header id="mainHeader" class="navbar-fixed-top">
+			<nav class="navbar navbar-default scrollMenu" role="navigation">
+				<div class="container-fluid">
+				
 					<div class="navbar-header">
-					
-						<img src="images/KDH_logo_b.png" style="height: 80px;"/>
-						
+
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						
-						<!-- 
-						<a class="navbar-brand" href="index.html">
-							<img src="images/KDH_logo_a.png" style="max-height: 58px; margin-top: 10px;" />
-						</a> -->
-						
-					</div>
-					
-					<a href="#home">
-						<img id="header_logo" src="images/KDH_logo_a.png" /> 
-					</a>
-							
+						<img class="navbar-brand" src="images/KDH_logo_b.png"/>
+					</div>	
 					<div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
+						
+						<a class="navbar-logo hidden-xs" href="#home" >
+							<img src="images/KDH_logo_a.png" />
+						</a>
+
 						<ul class="nav navbar-nav pull-right">
+						
+							<li class="active hidden-sm hidden-md hidden-lg"> <a href="#home"><i class="">Home</i></a></li>
 							
-							<!-- <li class="active"> <a href="#home"><i class="">Home</i></a></li> -->
-							
-							<li><a href="#about"> <i class="">About</i><img src="images/option_underline.png" style="width: 53px; height: 6px;"/></a> </li>
-							<li><a href="#event"> <i class="">Event</i><img src="images/option_underline.png" style="width: 53px; height: 6px;"/></a> </li> 
-							<li><a href="#services"> <i class="">Service</i><img src="images/option_underline.png" style="width: 53px; height: 6px;"/></a> </li>
-							<li><a href="#features"> <i class="">Features</i><img src="images/option_underline.png" style="width: 61px; height: 6px;"/></a> </li>
-							<li><a href="#partner"> <i class="">Partner</i><img src="images/option_underline.png" style="width: 55px; height: 6px;"/></a> </li>
-							<li><a href="#organisation"> <i class="">Organisation</i><img src="images/option_underline.png" style="width: 94px; height: 6px;"/></a> </li>
-							<li><a href="#contact"> <i class="">Contact</i><img src="images/option_underline.png" style="width: 58px; height: 6px;"/></a> </li>
-							<!-- <li><a href="http://www.koobe.com.tw/en-us/index.htm" target="_blank"><i class="">KOOBE</i></a></li> -->
+							<li><a href="#about"> <i class="">About</i><img src="images/option_underline.png" class="hidden-xs" style="width: 53px; height: 6px;"/></a> </li>
+							<li><a href="#event"> <i class="">Event</i><img src="images/option_underline.png" class="hidden-xs" style="width: 53px; height: 6px;"/></a> </li> 
+							<li><a href="#services"> <i class="">Service</i><img src="images/option_underline.png" class="hidden-xs" style="width: 53px; height: 6px;"/></a> </li>
+							<li><a href="#features"> <i class="">Features</i><img src="images/option_underline.png" class="hidden-xs" style="width: 61px; height: 6px;"/></a> </li>
+							<li><a href="#partner"> <i class="">Partner</i><img src="images/option_underline.png" class="hidden-xs" style="width: 55px; height: 6px;"/></a> </li>
+							<li><a href="#organisation"> <i class="">Organisation</i><img src="images/option_underline.png" class="hidden-xs" style="width: 94px; height: 6px;"/></a> </li>
+							<li><a href="#contact"> <i class="">Contact</i><img src="images/option_underline.png" class="hidden-xs" style="width: 58px; height: 6px;"/></a> </li>
 							
 						</ul>
 					</div>
-						
-				</nav>
-			</div>
+				
+				</div>				
+			</nav>
 		</header> <!-- header -->
 			
 		<!-- home -->
@@ -338,395 +463,335 @@
 			
 		<!-- about -->
 		<section class="slice" id="about">
-			<div class="about-box">
-			
-				<div class="about-title">About Us</div>
-				<div class="about-container">
-					KDH's hybrid DNA of the engineering house and the<br/>
-					service vendor guarantees the most ideal solution for<br/>
-					product design optimized for the digital helmet devices.<br/>
-					Turning your requirements of marketing purposes into the<br/>
-					technical and manufacturing specifications.  We design<br/>
-					and manage your projects in hardware and software<br/>
-					development from the beginning to mass production, from<br/>
-					logistics to the after­sales technical support process.<br/>
-				</div>
+			<div class="container-fluid">
+				<div class="row">
 				
+					<div class="col-md-4 col-first">
+						<div class="about-title section-title red">About Us</div>
+						<div class="about-container">
+							KDH's hybrid DNA of the engineering house and the<br/>
+							service vendor guarantees the most ideal solution for<br/>
+							product design optimized for the digital helmet devices.<br/>
+							Turning your requirements of marketing purposes into the<br/>
+							technical and manufacturing specifications.  We design<br/>
+							and manage your projects in hardware and software<br/>
+							development from the beginning to mass production, from<br/>
+							logistics to the after­sales technical support process.<br/>
+						</div>
+					</div>
+					<div class="col-md-8 col-last"></div>
+					
+				</div>
 			</div>
 		</section> <!-- #/about -->
 		
 		<!-- event -->
 		<section class="slice" id="event">
-			<div class="event-box">
-			
-				<div class="event-title">Press & Recent Events</div>
-				<div class="event-container">
-					<span class="event-subtitle">KDH Design Closes $1M Seed Financing, Led by Hazel Asset <br/> Management and Vectr Ventures<br/></span>
-					TAIPEI, TAIWAN – (Jul 10, 2015) –<br/>
-					<br/>
-					KDH Design Co., Ltd., designer of intelligent vehicle systems, has completed<br/>
-					an $1 million seed round financing led by Hazel Asset Management, Vectr<br/>
-					Ventures and selected angel investors.  Proceeds from this financing will fund<br/>
-					development of KDH’s advanced intelligent vehicle systems.  KDH intends to<br/>
-					use this financing to bring top industry technologists to join in its vision for a<br/>
-					safer and enjoyable riding and driving experiences through Augmented Reality.<br/>
-					<br/>
-					<span class="event-subtitle">About Vectr Ventures<br/></span>
-					Vectr Ventures is an early-stage fund and studio based in Hong Kong.  Vectr<br/>
-					back teams with a global mindset, passion for product, critical thinking and<br/>
-					creative problem solving.  Vectr leads investments from Seed to Series A and<br/>
-					syndicate with a network of regional and global strategic partners.  Vectr works<br/>
-					to be a globally trusted incubator and VC partner facilitating the creation and<br/>
-					expansion of the world’s most disruptive technological innovations.<br/>
-				</div>
+			<div class="container-fluid">
+				<div class="row">
 				
+					<div class="col-md-8 col-first"></div>
+					<div class="col-md-4 col-last">
+						<div class="event-title section-title green">Press & Recent Events</div>
+						<div class="event-container">
+							<span class="event-subtitle">KDH Design Closes $1M Seed Financing, Led by Hazel Asset<br/> Management and Vectr Ventures</span><br/>
+							TAIPEI, TAIWAN – (Jul 10, 2015) –<br/>
+							<br/>
+							KDH Design Co., Ltd., designer of intelligent vehicle systems, has completed
+							an $1 million seed round financing led by Hazel Asset Management, Vectr
+							Ventures and selected angel investors.  Proceeds from this financing will fund
+							development of KDH’s advanced intelligent vehicle systems.  KDH intends to
+							use this financing to bring top industry technologists to join in its vision for a
+							safer and enjoyable riding and driving experiences through Augmented Reality.<br/>
+							<br/>
+							<span class="event-subtitle">About Vectr Ventures</span><br/>
+							Vectr Ventures is an early-stage fund and studio based in Hong Kong.  Vectr
+							back teams with a global mindset, passion for product, critical thinking and
+							creative problem solving.  Vectr leads investments from Seed to Series A and
+							syndicate with a network of regional and global strategic partners.  Vectr works
+							to be a globally trusted incubator and VC partner facilitating the creation and
+							expansion of the world’s most disruptive technological innovations.
+						</div>
+					</div>
+					
+				</div>
 			</div>
 		</section> <!-- #/event -->
 		
 		<!-- services -->
 		<section class="slice" id="services">
-			<div class="services-box">
-				
-				<div class="services-title">Our services</div>
-				<div class="services-container-1">
-					<div class="img-list">
-						<img src="images/4_service/service_a.png" style="margin-bottom: 10px;" />
-						<img src="images/4_service/service_b.png" style="margin-bottom: 10px;" />
-						<img src="images/4_service/service_c.png" />
+			<div class="container-fluid">
+				<div class="row">
+					
+					<div class="col-md-1 col-first"></div>
+					<div class="col-md-1">
+						<div class="services-title section-title yellow">Our services</div>
 					</div>
-					<div class="msg-list">
-						<div class="msg" style="margin-bottom: 10px;">
-							KDH offer a Full Service digital
-							helmet design. We applied
-							the best-in-industry design
-							methodology using the latest in
-							Computer Aided Design software,
-							and 3D prototyping technology
-							to make sure our design
-							fit into different types of motorcycle
-							helmet.
-						</div>
-						<div class="msg" style="margin-bottom: 10px;">
-							KDH owns an in-house optic
-							design team able to make different
-							HUD design at different
-							positions and angles inside the
-							helmet and project focused
-							display images to the
-							motorcyclist.
-						</div>
-						<div class="msg">
-							KDH sensors collects data from<br/>
-							the motorcycle and parts e.g. tires,
-							and the road & weather conditions
-							to generate calculated warning
-							signals to motorcyclist which to
-							prevent accidents at slippery road.
-							The accident caused by the road
-							condition accounts approximately
-							67% of all traffic accidents in
-							recent years.
+					<div class="col-md-2">
+						<div class="img-list">
+							<img src="images/4_service/service_a.png" style="margin-bottom: 10px;" />
+							<img src="images/4_service/service_b.png" style="margin-bottom: 10px;" />
+							<img src="images/4_service/service_c.png" />
 						</div>
 					</div>
+					<div class="col-md-2 red">
+						<div class="msg-list">
+							<div class="msg" style="margin-bottom: 10px; padding-top: 14px;">
+								KDH offer a Full Service digital
+								helmet design. We applied
+								the best-in-industry design
+								methodology using the latest in
+								Computer Aided Design software,
+								and 3D prototyping technology
+								to make sure our design
+								fit into different types of motorcycle
+								helmet.
+							</div>
+							<div class="msg" style="margin-bottom: 10px;">
+								KDH owns an in-house optic
+								design team able to make different
+								HUD design at different
+								positions and angles inside the
+								helmet and project focused
+								display images to the
+								motorcyclist.
+							</div>
+							<div class="msg">
+								KDH sensors collects data from
+								the motorcycle and parts e.g. tires,
+								and the road & weather conditions
+								to generate calculated warning
+								signals to motorcyclist which to
+								prevent accidents at slippery road.
+								The accident caused by the road
+								condition accounts approximately
+								67% of all traffic accidents in
+								recent years.
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="img-list">
+							<img src="images/4_service/service_d.png" style="margin-bottom: 10px;" />
+							<img src="images/4_service/service_e.png" style="margin-bottom: 10px;" />
+							<img src="images/4_service/service_f.png" />
+						</div>
+					</div>
+					<div class="col-md-2 green">
+						<div class="msg-list">
+							<div class="msg" style="margin-bottom: 10px; padding-top: 14px;">
+								Using the gestural interface
+								and voice control, an intuitive
+								UI displays the supportive
+								information on the HUD and
+								assist the motorcyclist to play
+								music, answer phone calls and
+								watch front & rear camera
+								views anytime.
+							</div>
+							<div class="msg" style="margin-bottom: 10px;">
+								KDH Testing Procedure provides
+								our helmet design a
+								reliable testing process while
+								complying to the latest helmet
+								safety regulations, and electronic
+								certification tests.
+							</div>
+							<div class="msg">
+								KDH will connect the motorcyclists
+								and car drivers to the
+								cloud and manage to calculate
+								data generated from the helmet
+								devices and camera images in
+								real time. All content created
+								will become a real asset for
+								safe drive with useful data, and
+								also for security control.
+							</div>
+						</div>
+					</div>
+					<div class="col-md-1 col-last"></div>
+					
 				</div>
-				<div class="services-container-2">
-					<div class="img-list">
-						<img src="images/4_service/service_d.png" style="margin-bottom: 10px;" />
-						<img src="images/4_service/service_e.png" style="margin-bottom: 10px;" />
-						<img src="images/4_service/service_f.png" />
-					</div>
-					<div class="msg-list">
-						<div class="msg" style="margin-bottom: 10px;">
-							Using the gestural interface
-							and voice control, an intuitive
-							UI displays the supportive
-							information on the HUD and
-							assist the motorcyclist to play
-							music, answer phone calls and
-							watch front & rear camera
-							views anytime.
-						</div>
-						<div class="msg" style="margin-bottom: 10px;">
-							KDH Testing Procedure provides
-							our helmet design a
-							reliable testing process while
-							complying to the latest helmet
-							safety regulations, and electronic
-							certification tests.
-						</div>
-						<div class="msg">
-							KDH will connect the motorcyclists
-							and car drivers to the
-							cloud and manage to calculate
-							data generated from the helmet
-							devices and camera images in
-							real time. All content created
-							will become a real asset for
-							safe drive with useful data, and
-							also for security control.
-						</div>
-					</div>
-				</div>
-				
 			</div>
 		</section> <!-- #/services --> 
 
 		<!-- features -->
-		<section class="slice color1" id="features" style="border-top: 2px solid #7DC24F;">
-			<div class="container clearfix">
+		<section class="slice color1" id="features">
+			<div class="container-fluid">
 				<div class="row">
-					<div class="col-sm-12">
-						<h1 class="">Helmet</h1>
+					
+					<div class="col-md-3 col-first">
+						<div class="features-title section-title red">Features</div>
 					</div>
+					<div class="col-md-9 col-last"></div>
 					
-					<div class="col-sm-12" style="height:30px;"> </div>
-					
-					<div class="col-sm-12">
-						<img alt="" class="img-responsive" src="images/stories/Helmet-banner.jpg">
-					</div>
-					
-					<div class="col-sm-12" style="height:60px;"> </div>
-
-					<!-- Remove isotopeWrapper, isotopeItem, imgHover class -->
-					<div class="portfolio-items clearfix" id="2">
-					
-						<div class="row">
-							<article class="col-sm-6 women">
-								<section class="imgWrapper">
-									<img alt="" src="images/stories/Helmet-02.jpg" class="img-responsive stories-pic">
-								</section>
-								<section class="boxContent">
-									<p>
-										We offer a Full Service Product Design Consultant offering the best design and documentation in the business. We can quickly advance your idea from concept, to full parametric solid models, detail design, to prototype. We developed best-in-industry design methodology using the latest in Computer Aided Design software, and 3D prototyping technology.
-									</p>
-								</section>
-							</article>
-							<article class="col-sm-6 cats">
-								<section class="imgWrapper"> 
-									<img alt="" src="images/stories/Helmet-03.jpg" class="img-responsive stories-pic"> 
-								</section>
-								<section class="boxContent">
-									<p>KDH use a sharper, high definition HUD projector.  The image will be reflected into the rider’s vision using beam splitting glass, making the Driving experience look a lot more like what you’d imagine out of a motorcycle HUD than the previous "Classic" model.
-									</p>
-								</section>
-							</article>
-						</div>
-						
-						
-						<div class="row">
-							<article class="col-sm-6 women">
-								<section class="imgWrapper">
-									<img alt="" src="images/stories/Helmet-04.jpg" class="img-responsive stories-pic">
-								</section>
-								<section class="boxContent">
-									<p>
-										The network, called KDHcloud, will help businesses process and manage data generated from billions of helmet devices and with their applications around the world in real time, and all content will become a real asset for safe drive with useful data, but also for security control.
-									</p>
-								</section>
-							</article>
-							<article class="col-sm-6 cats">
-								<section class="imgWrapper"> 
-									<img alt="" src="images/stories/Helmet-05.jpg" class="img-responsive stories-pic"> 
-								</section>
-								<section class="boxContent">
-									<p>
-										Using the gestural interface, or voice control or even connecting the car-detector infrared sensor, the supportive information will assist you anytime. Content display on the visor larger field of vision, will make driving more safe and predictable.
-									</p>
-								</section>
-							</article>
-						</div>
-						
-						<div class="row">
-							<article class="col-sm-6 women">
-								<section class="imgWrapper">
-									<img alt="" src="images/stories/Helmet-06.jpg" class="img-responsive stories-pic">
-								</section>
-								<section class="boxContent">
-									<p>
-										KDH make possible the safe-driving by predicting dangers before they occur based on an accumulation of sensor data indicating fatigue, stress, and tension, and applying that to a hazard map. Human error not attributable to driving violations or skill has accounted for approximately 67% of all traffic accidents in recent years. Legal reforms and support for devices that promote safe are aimed at improving this situation.
-
-									</p>
-								</section>
-							</article>
-							<article class="col-sm-6 cats">
-								<section class="imgWrapper"> 
-									<img alt="" src="images/stories/Helmet-07.jpg" class="img-responsive stories-pic"> 
-								</section>
-								<section class="boxContent">
-									<p>
-										KDH Testing, a subsidiary of KDH, has provided clients with professional and reliable testing and certification services since its foundation. In order to remain competitive and respond to market demands for a comprehensive solution, new services are continually developed that cover safety regulations, and technical test. ( Air flow, breathing test, crash test, etc…
-
-									</p>
-								</section>
-							</article>
-						</div>
-						
-						<div class="row">
-							<article class="col-sm-6 women">
-								<section class="imgWrapper">
-									<img alt="" src="images/stories/Helmet-08.jpg" class="img-responsive stories-pic">
-								</section>
-								<section class="boxContent">
-									<p>
-										KDH`s team of researchers and engineers include over 2 employees across 1 global research facilities—each one collaborating on strategic technologies to forge new market trends and set new standards of excellence.
-										
-									</p>
-								</section>
-							</article>
-							<article class="col-sm-6 cats">
-								<section class="imgWrapper"> 
-									<img alt="" src="images/stories/Helmet-09.jpg" class="img-responsive stories-pic"> 
-								</section>
-								<section class="boxContent">
-									<p>
-										Based in Taiwan and China, KDH specializes in developing and manufacturing high-performance HELMET and components for driving assistance with the goal of providing added-value product solutions to customers in the motorcycle industry.
-Our factory in China which was established in 1997 is where we conduct R&D, engineering and manufacturing operations.
-									</p>
-								</section>
-							</article>
-						</div>
-						
-						
-					</div>
 				</div>
-				</div>
+			</div>
 		</section> <!-- #/features -->
 		
 		<!-- partner -->
-		<section class="slice" id="partner" style="border-top: 2px solid #7DC24F;">
-			<div class="container">
+		<section class="slice" id="partner">
+			<div class="container-fluid">
 				<div class="row">
-					<div class="col-xs-12">
-						<h1 class="">Our Partner</h1>
+					
+					<div class="col-md-1 col-first"></div>
+					<div class="col-md-5">
+						<div class="row">
+							<div class="col-md-12"><img id="Partners_a" src="images/6_partner/Partners_a.png"></div>	
+						</div>
+						<div class="row">
+							<div class="col-md-4"><img id="Partners_b" src="images/6_partner/Partners_b.png"></div>
+							<div class="col-md-4"><img id="Partners_c" src="images/6_partner/Partners_c.png"></div>	
+							<div class="col-md-4"><img id="Partners_d" src="images/6_partner/Partners_d.png"></div>	
+						</div>
+						<div class="row">
+							<div class="col-md-4"><div class="logo-rim"><img id="logo_agv" src="images/6_partner/agv.png"></div></div>
+							<div class="col-md-4"><div class="logo-rim"><img id="logo_GogoroLogo" src="images/6_partner/GogoroLogo.png"></div></div>	
+							<div class="col-md-4"><div class="logo-rim"><img id="logo_foxconn" src="images/6_partner/foxconn.png"></div></div>	
+						</div>
 					</div>
-					<div class="col-sm-12" style="height:30px;"> </div>
-				</div>
-				<div class="row">
-					<!-- <div class="col-sm-5"> <img src="images/kdh/kdh-aboutus.png" alt="services" class="img-responsive"> </div> -->
-					<div class="col-sm-12">
-						<p>
-							KDH's hybrid DNA of the engineering house and the service vendor guarantees the most ideal solution for product design optimized for the digital helmet devices. Turning your requirements of marketing purposes into the technical and manufacturing specifications. We design and manage your projects in hardware and software development from the beginning to mass production, from logistics to the after­sales technical support process.
-						</p>
+					<div class="col-md-1"></div>
+					<div class="col-md-5 col-last" style="padding-right: 0;">
+						<div class="row">
+						
+							<div class="col-md-10">
+								<div class="partner-container">
+									Based in Taiwan and China, KDH specialises in developing and manufacturing high - performance
+									Helmet and module for driving assistance with the goal of providing  added - value product 
+									solutions to customers in the motorcycle industry. Our strategic partners are Foxconn & Topkey 
+									and their factories are in China and Vietnam (FOXCONN VIETNAM) where we conduct our design 
+									for manufacturing operations.
+								</div>
+							</div>
+							<div class="col-md-2"></div>
+							
+						</div>
+						<div class="row">
+							<div class="col-md-12" style="padding: 0;"><div class="partner-title section-title green">Our Partner</div></div>
+						</div>
 					</div>
+					
 				</div>
 			</div>
 		</section> <!-- #/partner -->
 		
 		<!-- organisation -->
-		<section class="slice" id="organisation" style="border-top: 2px solid #7DC24F;">
-			<div class="container">
+		<section class="slice" id="organisation">
+			<div class="container-fluid">
 				<div class="row">
-					<div class="col-xs-12">
-						<h1 class="">Management team</h1>
+					
+					<div class="col-md-3 col-first">
+						<div class="organisation-title section-title red">Our Team</div>
 					</div>
-					<BR/>
+					<div class="col-md-9 col-last"></div>
+					
 				</div>
 			</div>
+			<div class="container">
 			
-			<div class="container clearfix">
-			<div class="row">
-						
-						<article class="col-sm-6 graphics" style="padding-left:20px; padding-right:20px;">
-						
-							<div class="row">
-								<img class="col-xs-3 img-responsive" style="margin-bottom: -90px; margin-left: 20px;" alt="" src="images/member/younger.jpg">
-							</div>
-						
-							<section class="boxContent" style="background-color: #EBEAEA;">
-								<h3 class="team-member-right">Younger L. Liang</h3>
-								<h6 class="team-member-right team-member-title">Chief Technology Officer</h6>
-								<p style="font-size: 0.8em;" class="team-member-font">
-									<span style="color: #000;" class="team-member-sub">EDUCATION & QUALIFICATIONS</span><br/>
-									1991<BR>
-									  NCTU (National Chiao Tung University) Applied Mathematics Bachelor
-									  <br/>
-									 <br/>
-									 <span style="color: #000;" class="team-member-sub">WORK EXPERIENCE</span><br/>
-									 2013 - present<br/>
-										KDH-Design Service Inc., Chief Technology Officer 2009-2013<br/>
-								
-									2009-2013<br/>
-								  KOOBE Inc., Vice President, Product Development<br/>
-								  
-								  2008-2009<br/>
-								  Phonic Inc., Director, Product Management<br/>
-								  
-								  2005-2008<br/>
-								  XCome Inc., Director, Product Management<br/>
-								  
-								  1997-2005<br/>
-								  Ulead Systems, Inc., Manager, Product Innovation<br/>
-								</p>
-							</section>
-						</article>
-						<article class="col-sm-6 graphics" style="padding-left:20px; padding-right:20px;">
-							
-							<div class="row">
-								<img class="col-xs-3 img-responsive" style="margin-bottom: -90px; margin-left: 20px;" alt="" src="images/member/jeremy.jpg">
-							</div>
-							
-							<section class="boxContent" style="background-color: #EBEAEA;">
-								<h3 class="team-member-right">Jeremy Lu</h3>
-								<h6 class="team-member-right team-member-title">Managing Director</h6>
-								<p style="font-size: 0.8em;" class="team-member-font">
-									<span style="color: #000;" class="team-member-sub">EDUCATION & QUALIFICATIONS</span><br/>
-									1995<br/>
-									  The University of Melbourne, Electrical and Electronic Engineering, Bachelor<br/>
-									  2001<br/>
-									  The University of Melbourne, Master of Telecommunication<br/>
-									 <br/><br/>
-									 <span style="color: #000;" class="team-member-sub">WORK EXPERIENCE</span><br/>
-									 2013 - present<br/>
-									  KDH - Design Service Inc., Managing Director<br/>
-									  
-									  Dec 2011 - Dec 2013,<br/>
-									  Koobe Inc., Vice President Of Sales<br/>
-									  
-									  July 2001 - Oct 2011<br/>
-									  Foxconn, Manager<br/>
-								</p>
-							</section>
-						</article>
+				<div class="row">
+					
+					<div class="col-md-8 organisation-container">
+						More than 30 dedicated customer focus team members for KDH at Foxconn Vietnam & Hsinchu sites.
 					</div>
+					<div class="col-md-4"><img id="team_chart" src="images/7_team/team_chart.png" /></div>
+					
+				</div>
+				<div class="row imgs">
+					
+					<div class="col-md-3"><img id="team_A" src="images/7_team/team_A.png" /></div>
+					<div class="col-md-3"><img id="team_B" src="images/7_team/team_B.png" /></div>
+					<div class="col-md-3"><img id="team_C" src="images/7_team/team_C.png" /></div>
+					<div class="col-md-3"><img id="team_D" src="images/7_team/team_D.png" /></div>
+					
+				</div>
+				<div class="row workers">
+					
+					<div class="col-md-3"><img src="images/7_team/Jeremy.png" /></div>
+					<div class="col-md-3 team-yellow">
+						<div class="worker-info">
+							<span class="worker-name">Jeremy Lu</span>
+							<hr/>
+							<span class="worker-function">Managing Director & Founder</span>
+						</div>
+					</div>
+					<div class="col-md-3 team-green">
+						<div class="worker-info">
+							<span class="worker-name">Younger L. Liang</span>
+							<hr/>
+							<span class="worker-function">CTO & Co-founder</span>
+						</div>
+					</div>
+					<div class="col-md-3"><img src="images/7_team/Younger.png" /></div>
+					
+				</div>
+				
 			</div>
 		</section> <!-- #/organisation -->
 
 		<!-- contact -->
-		<section class="slice" id="contact" style="border-top: 2px solid #7DC24F;">
+		<section class="slice" id="contact">
 			<div class="container">
 				<div class="row">
-
-					<div class="col-sm-12">
-						<h1 class="" style="padding-bottom:20px">Contact us</h1>
-					</div>
-					<div class="col-sm-12">
-						<!--
-						<div id="mapWrapper" class="mb30"></div>
-						-->
-					</div>
 				
-					<div class="col-sm-12">
-						<img src="images/kdh/kdh-city2.jpg" alt="Taipei" class="img-responsive img-rounded" />
-						<h2 style="font-size:22px; border-bottom: 1px solid #7DC24F;text-align: center; margin: 20px 80px">Office Headquarters</h2>
-						<p style="text-align: center"><strong>KDH ­ Design Service Inc., Taiwan</strong><br/>5F., No.50, Ln. 316, Ruiguang Rd.,<br/> Neihu Dist., Taipei City 114, Taiwan</p>
-					</div>
-					<div class="col-sm-2">
-					</div>
-					<div class="col-sm-8">
-						<h2 style="font-size:22px; border-bottom: 1px solid #7DC24F;text-align: center; margin: 20px 80px">Customer Support</h2>
+					<div class="col-md-6">
 						
-						<p class="text-center"><strong>Taiwan</strong></p>
-						<p class="text-center">Younger L. Liang<br/><a href="mailto:younger@kdhservice.com">younger@kdhservice.com</a></p>
-					</div>
-					<div class="col-sm-2">
-					</div>
+						<img id="contact_taipei" src="images/8_contact/contact_taipei.jpg">
+						<div id="contact_map">
+							<div id="gmap_canvas"></div>
+						</div> 
+						<a href='http://www.maps-generator.com/'>http://maps-generator.com</a> 
+						<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+						<script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=5154c3dbcc6aef70020136969047218e12647545'></script>
+						<script type='text/javascript'>
+							function init_map(){
+								var myOptions = {
+									zoom: 15
+									,center:new google.maps.LatLng( 25.07724351083706, 121.57374506018823 )
+									,mapTypeId: google.maps.MapTypeId.TERRAIN
+								};
+								map = new google.maps.Map( document.getElementById('gmap_canvas'), myOptions );
+								marker = new google.maps.Marker({ 
+									map: map
+									, position: new google.maps.LatLng( 25.07724351083706, 121.57374506018823 ) 
+								});
+								infowindow = new google.maps.InfoWindow({ content:'<strong>KDH ­ Design Service Inc., Taiwan</strong><br>2F., No. 50, Ln.316, Ruiguang Rd., Neihu Dist., Taipei City 114, Taiwan' });
+								google.maps.event.addListener( marker, 'click', function(){ infowindow.open( map, marker ); }); 
+								infowindow.open( map, marker );
+							}
+							google.maps.event.addDomListener(window, 'load', init_map);
+						</script>
 
+					</div>
+					<div class="col-md-6">
+						
+						<div class="container-address grey">
+							Neihu office: <br/>
+							2F., No. 50, Ln.316, Ruiguang Rd., Neihu Dist., Taipei City <br/>
+							114, Taiwan
+						</div>
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control container-input grey" id="InputName" placeholder="Name">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control container-input grey" id="InputEmail" placeholder="Email address">
+							</div>
+							<div class="form-group">
+								<textarea class="form-control container-input grey" id="InputMessages" rows="6" placeholder="Fill some messages...."></textarea>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn container-button grey">Send</button>
+							</div>
+						</form>
+						
+					</div>
+					
 				</div>
 			</div>
 		</section> <!-- #/contact -->
-			
-		<!-- content -->
-				
+		
 		<!-- footer -->
 		<footer>
 			<section id="mainFooter">
@@ -740,6 +805,7 @@ Our factory in China which was established in 1997 is where we conduct R&D, engi
 				</div>
 			</section>
 		</footer> <!-- End footer -->
+		
 	</div>
 	<!-- global wrapper -->
 	
