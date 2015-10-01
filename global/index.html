@@ -48,17 +48,534 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 	<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
 	<style type="text/css">	
+		
 	@media screen and (max-width: 767px) { 
+		
 		/* screen-xs (Phones) */ 
+
+		.navbar-brand {
+			padding:0;
+			height: 80px;
+		}
+		
+		.container-fluid .row .col-first {
+			padding-left: 15px;
+		}
+		.container-fluid .row .col-last {
+			padding-right: 15px;
+		}
+		
+		.section-title {
+			font-weight: bold;
+			font-size: 22px;
+			line-height: 22px;
+		}
+		
+		.about-title {
+			padding: 7px 10px 6px;
+			text-align: left;
+		}
+		.about-container {
+			padding-top: 5%;
+			padding-left: 6px;
+			font-size: 18px;
+			line-height: 200%;
+			color: #3A3939;
+			background: url('images/white60.png');
+		}
+		
+		.event-title {
+			padding: 8px 0 7px 20px;
+		}
+		.event-container {
+			padding-top: 34px;
+			padding-left: 20px;
+			font-size: 16px;
+			color: #3A3939;
+			background: url('images/white60.png');
+		}
+		
+		.services-title {
+			width: 170px;
+			padding: 8px 0 5px 20px;
+			margin-bottom: 3%;
+		}
+		.services-imgs {
+			width: 100%;
+			float: left;
+			margin-bottom: 3%;
+		}
+		.services-msgs {
+			float: left;
+			width: 100%;
+			margin-bottom: 3%;
+			padding: 0 15px;
+		}
+		.services-msg {
+			padding-left: 15px;
+			padding-right: 15px;
+			padding: 15px 0;
+			font-size: 120%;
+		}
+		
+		#features {
+			background-image: url('images/5_features/features.png');
+			background-size: 100% auto;
+			padding: 3% 0 55%;
+			background-repeat-y: no-repeat;
+		}
+		.features-title {
+			padding: 6px 35px;
+		}
+		
+		#partner {
+			background-image: url('images/6_partner/partners.png');
+			background-size: 100% 100%;
+			padding-top: 6%;
+			padding-bottom: 6%;
+			border-top: 2px solid #FFF;
+		}
+		#Partners_b
+		, #Partners_c
+		, #Partners_d
+		, #logo_agv 
+		, #logo_GogoroLogo
+		, #logo_foxconn{ height: auto; }
+		.partner-title {
+			padding: 8px 0 5px 7px;
+			margin-top: 6%;
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+		.logo-rim {
+			border: 1px solid #989898;
+			margin-bottom: 10px;
+			background: #FFF;
+		}
+
+		.organisation-title {
+			padding: 7px 16px 5px;
+		}
+		.organisation-container {
+			font-size: 14px;
+			color: #3A3939;
+			padding-top: 5%;
+		}
+		#team_A 
+		, #team_B
+		, #team_C 
+		, #team_D {
+			margin-bottom: 10px;
+		}
+		.team-yellow {
+			width: 100%;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		.team-yellow::before {
+			content: "";
+			position: absolute;
+			top: -20px;
+			left: 50%;
+			margin-left: -10px;
+			border-right: transparent 20px solid;
+			border-bottom: rgba( 249, 174, 64, 0.8) 20px solid;
+			border-left: transparent 20px solid;
+
+		}
+		.team-yellow .worker-info {
+			padding: 60px 15px;
+			background: rgba( 249, 174, 64, 0.8);
+		}
+		.team-green {
+			width: 100%;
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+		.team-green::after  {
+			content: "";
+			position: absolute;
+			bottom: -20px;
+			left: 50%;
+			margin-left: -10px;
+			border-top: rgba( 106, 202, 157, 0.8) 20px solid;
+			border-right: transparent 20px solid;
+			border-left: transparent 20px solid;
+
+		}
+		.team-green .worker-info {
+			padding: 60px 15px;
+			background: rgba( 106, 202, 157, 0.8);
+		}
+		.worker-name {
+			font-size: 18px;
+			font-weight: bold;
+		}
+		.worker-function {
+			font-size: 12px;
+		}
+		.worker-info hr {
+			margin: 20px 0;
+		}
+		
+		#contact_map {
+			overflow: hidden; 
+			width: 100%;
+			height: 328px;
+			margin-bottom: 10px;
+		}
+		
 	}
-	@media screen and (min-width: 768px) and (max-width: 991px) { 
+	/* @media screen and (min-width: 768px) and (max-width: 991px) { */
+	@media screen and (min-width: 768px) { 
+
 		/* screen-sm (Tablets) */
+		
+		.navbar-brand {
+			padding:0;
+			height: 60px;
+		}
+		
+		.navbar-nav > li > a {
+			overflow-y: hidden;
+			height: 20px;
+		}
+		.navbar-nav > li > a i {
+			padding:0;
+		}
+		.navbar-nav > li > a i
+		, .navbar-nav > li > a:hover i
+		, .navbar-nav > li.active > a i {
+			color: #000;
+		}
+		.navbar-default .navbar-nav > li > a
+		, .navbar-default .navbar-nav > li > a:hover
+		, .navbar-default .navbar-nav > li > a:focus
+		, .navbar-default .navbar-nav > .active > a
+		, .navbar-default .navbar-nav > .active > a:hover
+		, .navbar-default .navbar-nav > .active > a:focus {
+			background: none;
+			color: #000;
+		}	
+		.navbar-default .navbar-nav > .active > a {
+			padding-bottom: 14px;
+			height: 34px;
+			margin-bottom: 5px;
+		}
+
+		.navbar-brand {
+			padding:0;
+			height: 60px;
+		}
+		
+		.container-fluid .row .col-first {
+			padding-left: 0;
+		}
+		.container-fluid .row .col-last {
+			padding-right: 0;
+		}
+	
+		.section-title {
+			font-weight: bold;
+			font-size: 44px;
+			line-height: 44px;
+		}
+		
+		.about-title {
+			padding: 14px 20px 12px;
+		}
+		.about-container {
+			padding-top: 5%;
+			font-size: 18px;
+			line-height: 200%;
+			color: #3A3939;
+			text-align: left;
+		}
+	
+		.event-title {
+			padding: 16px 0 14px 40px;
+		}
+		.event-container {
+			padding-top: 34px;
+			font-size: 16px;
+			color: #3A3939;
+		}
+		
+		.services-title {
+			width: 350px;
+			padding: 16px 0 10px 40px;
+			margin-bottom: 3%;
+		}
+		.services-imgs {
+			width: 300px;
+			float: left;
+		}
+		.services-msgs {
+			float: left;
+			width: 410px;
+			margin-left: 10px;
+			margin-bottom: 3%;
+			padding: 0 5px;
+		}
+		.services-msg {
+			height: 300px;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-size: 120%;
+		}
+		
+		#features {
+			background-image: url('images/5_features/features.png');
+			background-size: 100% 100%;
+			padding: 112px 0 856px;
+		}
+		.features-title {
+			padding: 14px 70px 12px;
+		}
+		
+		#partner {
+			background-image: url('images/6_partner/partners.png');
+			background-size: 100% 100%;
+			padding-top: 18%;
+			padding-bottom: 2%;
+			border-top: 2px solid #FFF;
+		}
+		#Partners_b
+		, #Partners_c
+		, #Partners_d
+		, #logo_agv 
+		, #logo_GogoroLogo
+		, #logo_foxconn{ height: auto; }
+		.partner-title {
+			padding: 16px 0 10px 15px;
+			margin-top: 25%;
+		}
+		.partner-container {
+			padding-top: 0;
+			font-size: 20px;
+			color: #3A3939;
+		}
+		.logo-rim {
+			border: 1px solid #989898;
+			margin-bottom: 10px;
+		}
+		
+		.organisation-title {
+			text-align: right;
+			padding: 14px 33px 10px;
+		}
+		.organisation-container {
+			font-size: 28px;
+			color: #3A3939;
+			padding-top: 5%;
+		}
+		#team_A 
+		, #team_B
+		, #team_C 
+		, #team_D {
+			margin-bottom: 10px;
+		}
+		.team-yellow {
+			background-image: url('images/7_team/team_yellow.png');
+			background-size: 100% 100%;
+			padding: 132px 15px 126px 50px;
+			margin-left: -15px;
+			margin-right: 15px;
+			margin-bottom: 20px;
+		}
+		.team-green {
+			background-image: url('images/7_team/team_green.png');
+			background-size: 100% 100%;
+			padding: 132px 50px 126px 15px;
+			margin-left: 15px;
+			margin-right: -15px;
+		}
+		.worker-name {
+			font-size: 28px;
+			font-weight: bold;
+		}
+		.worker-function {
+			font-size: 18px;
+		}
+		.worker-info hr {
+			margin: 20px 0;
+		}
+		
+		#contact_map {
+			overflow: hidden; 
+			width: 100%;
+			height: 328px;
+			margin-bottom: 10px;
+		}
+
 	}
-	@media screen and (min-width: 992px) and (max-width: 1199px) { 
+	/* @media screen and (min-width: 992px) and (max-width: 1199px) { */
+	@media screen and (min-width: 992px) { 
+		
 		/* screen-md (Desktops) */
+		
+		.navbar-brand {
+			padding:0;
+			height: 80px;
+		}
+		
+		#KDH_logo_a {
+			height: 58px;
+			margin-top: 10px;
+			float: right;
+		}
+
+		.navbar-nav > li > a {
+			overflow-y: hidden;
+			height: 20px;
+			margin-top: 30px;
+		}
+		.navbar-default .navbar-nav > .active > a {
+			padding-bottom: 14px;
+			height: 34px;
+			margin-bottom: 0;
+		}
+
+		.services-imgs {
+			width: 200px;
+			float: left;
+		}
+		.services-msgs {
+			float: left;
+			width: 240px;
+			margin-left: 10px;
+			padding: 0 5px;
+		}
+		.services-msg {
+			height: 200px;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-size: 80%;
+		}
+		
+		#Partners_b
+		, #Partners_c
+		, #Partners_d { height: 67px; }
+		#logo_agv 
+		, #logo_GogoroLogo
+		, #logo_foxconn{ height: 96px; }
+		.partner-title {
+			padding: 16px 0 10px 15px;
+			margin-top: 15%;
+		}
+		.logo-rim {
+			border: 1px solid #989898;
+			margin-bottom: 0;
+		}
+	
+		#team_A 
+		, #team_B
+		, #team_C 
+		, #team_D {
+			height: 172px;
+			margin-bottom: 0;
+		}
+		.team-yellow {
+			background-image: url('images/7_team/team_yellow.png');
+			background-size: 100% 100%;
+			padding: 66px 15px 60px 50px;
+			margin-left: -15px;
+			margin-right: 15px;
+			margin-bottom: 0;
+		}
+		.team-green {
+			background-image: url('images/7_team/team_green.png');
+			background-size: 100% 100%;
+			padding: 66px 50px 60px 15px;
+			margin-left: 15px;
+			margin-right: -15px;
+		}
+		.worker-name {
+			font-size: 18px;
+			font-weight: bold;
+		}
+		.worker-function {
+			font-size: 12px;
+		}
+		.worker-info hr {
+			margin: 20px 0;
+		}
+		
+		#contact_map {
+			overflow: hidden; 
+			width: 100%;
+			height: 328px;
+			margin-bottom: 10px;
+		}
+		
+		#contact_map {
+			overflow: hidden; 
+			width: 100%;
+			height: 328px;
+			margin-bottom: 0px;
+		}
+
 	}
-	@media screen and (min-width: 1200px) { 
-		/* screen-lg (Desktops) */
+	@media screen and (min-width: 1200px) {
+	
+		/* screen-lg (Large Desktops) */
+		
+		.services-title {
+			width: 350px;
+			padding: 16px 0 10px 40px;
+			-webkit-transform: rotate(-90deg); 
+				-ms-transform: rotate(-90deg); 
+					transform: rotate(-90deg);
+			margin-top: 140px;
+			margin-left: -140px;
+		}
+		
+		#Partners_b
+		, #Partners_c
+		, #Partners_d { height: 100px; }
+		#logo_agv 
+		, #logo_GogoroLogo
+		, #logo_foxconn{ height: 203px; }
+		.partner-title {
+			padding: 16px 0 10px 15px;
+			margin-top: 25%;
+		}
+		.partner-container {
+			padding-top: 20%;
+			font-size: 20px;
+			color: #3A3939;
+		}
+		.team-yellow {
+			background-image: url('images/7_team/team_yellow.png');
+			background-size: 100% 100%;
+			padding: 90px 15px 84px 50px;
+			margin-left: -15px;
+			margin-right: 15px;
+		}
+		.team-green {
+			background-image: url('images/7_team/team_green.png');
+			background-size: 100% 100%;
+			padding: 90px 50px 84px 15px;
+			margin-left: 15px;
+			margin-right: -15px;
+		}
+		.worker-name {
+			font-size: 26px;
+			font-weight: bold;
+		}
+		.worker-function {
+			font-size: 16px;
+		}
+		.worker-info hr {
+			margin: 20px 0;
+		}
+	
+		#contact_map {
+			overflow: hidden; 
+			width: 100%;
+			height: 272px;
+		}
+		
 	}
 
 	body {
@@ -83,49 +600,6 @@
 		background: url('images/white60.png');
 	}
 
-	.navbar-brand {
-		padding:0;
-		height: 80px;
-	}
-	
-	.navbar-logo > img {
-		position: absolute;
-		left: 50%;
-		margin: 10px 0 0 -29px;
-		max-height: 58px;
-	}
-	
-	.navbar-nav > li > a {
-		overflow-y: hidden;
-		height: 20px;
-		margin-top: 30px;
-	}
-	
-	.navbar-nav > li > a i {
-		padding:0;
-	}
-	
-	.navbar-nav > li > a i
-	, .navbar-nav > li > a:hover i
-	, .navbar-nav > li.active > a i {
-		color: #000;
-	}
-	
-	.navbar-default .navbar-nav > .active > a {
-		padding-bottom: 14px;
-		height: 34px;
-	}
-	
-	.navbar-default .navbar-nav > li > a
-	, .navbar-default .navbar-nav > li > a:hover
-	, .navbar-default .navbar-nav > li > a:focus
-	, .navbar-default .navbar-nav > .active > a
-	, .navbar-default .navbar-nav > .active > a:hover
-	, .navbar-default .navbar-nav > .active > a:focus {
-		background: none;
-		color: #000;
-	}
-
 	section img {
 		width: 100%;
 	}
@@ -146,65 +620,32 @@
 		background-image: url('images/grey.png');
 		color: #3A3939;
 	}
-	
-	.section-title {
-		font-weight: bold;
-		font-size: 44px;
-		line-height: 44px;
-	}
-	
+
 	.container-fluid .row {
 		margin: 0;
 	}
-	.container-fluid .row .col-first {
-		padding-left: 0;
-	}
-	.container-fluid .row .col-last {
-		padding-right: 0;
-	}
-	
+
 	#home {
 		padding: 0;
 	}
 
 	#about {
 		background-image: url('images/2_about/About.png');
-		background-size: 100% auto;
+		background-size: 100% 100%;
 		border-top: 2px solid #FFF;
-		text-align: right;
-		padding-top: 266px;
-		padding-bottom: 336px;
-	}
-	.about-title {
-		padding: 14px 20px 12px;
-	}
-	.about-container {
-		padding-top: 34px;
-		line-height: 26px;
-		font-size: 18px;
-		line-height: 36px;
-		color: #3A3939;
-		
+		padding-top: 15%;
+		padding-bottom: 30%;
 	}
 
 	#event {
 		background-image: url('images/3_event/Event.png');
-		background-size: 100% auto;
+		background-size: 100% 100%;
 		width: 100%;
 		display: inline-block;
 		border-top: 2px solid #FFF;
 		padding-top: 126px;
 		padding-bottom: 240px;
 		font-family: Helvetica;
-	}
-	.event-title {
-		padding: 16px 0 14px 40px;
-	}
-	.event-container {
-		padding-top: 34px;
-		font-size: 16px;
-		color: #3A3939;
-		
 	}
 	.event-subtitle {
 		font-weight: bold;
@@ -213,83 +654,31 @@
 	
 	#services {
 		background-color: #FFF;
-		padding-top: 95px;
-		padding-bottom: 48px;
-	}
-	.services-title {
-		width: 350px;
-		padding: 16px 0 10px 40px;
-		-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
-			-ms-transform: rotate(-90deg); /* IE 9 */
-				transform: rotate(-90deg);
-		margin-top: 140px;
-		margin-left: -110px;
-	}
-	#services .msg {
-		height: 247px;
+		padding-top: 12%;
+		padding-bottom: 6%;
 		color: #FFF;
 	}
-	
-	#features {
-		background-image: url('images/5_features/features.png');
-		background-size: 100% auto;
-		padding: 112px 0 856px;
+	.services-row {
+		display: inline-block;
 	}
-	.features-title {
-		padding: 14px 70px 12px;
+	.services-lb {
+		float: left;
 	}
-	
-	#partner {
-		background-image: url('images/6_partner/partners.png');
-		background-size: 100% auto;
-		padding-top: 148px;
-		padding-bottom: 23px;
-		border-top: 2px solid #FFF;
+	.services-rb {
+		float: right;
 	}
+
 	#partner img {
 		margin-bottom: 10px;
 	}
 	#Partners_a { width: 100%; }
-	#Partners_b
-	, #Partners_c
-	, #Partners_d { height: 100px; }
-	#logo_agv 
-	, #logo_GogoroLogo
-	, #logo_foxconn{ height: 203px; }
-	.logo-rim {
-		border: 1px solid #989898;
-	}
-	.partner-title {
-		padding: 16px 0 10px 15px;
-		margin-top: 25%;
-	}
-	.partner-container {
-		padding-top: 45%;
-		font-size: 20px;
-		color: #3A3939;
-	}
-	
+
 	#organisation {
 		background-image: url('images/7_team/team.png');
-		background-size: 100% auto;
+		background-size: 100% 100%;
 		padding-top: 8%;
 		padding-bottom: 5%;
 		border-top: 2px solid #FFF;
-	}
-	#team_A 
-	, #team_B
-	, #team_C 
-	, #team_D {
-		height: 172px;
-	}
-	.organisation-title {
-		text-align: right;
-		padding: 14px 33px 10px;
-	}
-	.organisation-container {
-		font-size: 28px;
-		color: #3A3939;
-		padding-top: 5%;
 	}
 	#organisation .imgs {
 		margin-top: 30px;
@@ -297,34 +686,11 @@
 	#organisation .workers {
 		margin-top: 17px;
 	}
-	.team-yellow {
-		background-image: url('images/7_team/team_yellow.png');
-		background-size: 100% 100%;
-		padding: 90px 15px 84px 50px;
-		margin-left: -15px;
-		margin-right: 15px;
-	}
-	.team-green {
-		background-image: url('images/7_team/team_green.png');
-		background-size: 100% 100%;
-		padding: 90px 50px 84px 15px;
-		margin-left: 15px;
-		margin-right: -15px;
-	}
 	.worker-info {
 		color: #FFF;
 		text-align: center;
 	}
-	.worker-name {
-		font-size: 26px;
-		font-weight: bold;
-	}
-	.worker-function {
-		font-size: 16px;
-	}
-	.worker-info hr {
-		margin: 20px 0;
-	}
+
 	
 	#contact {
 		padding-top: 8%;
@@ -332,11 +698,6 @@
 	}
 	#contact_taipei {
 		margin-bottom: 6px;
-	}
-	#contact_map {
-		overflow: hidden; 
-		width: 100%;
-		height: 272px;
 	}
 	#gmap_canvas {
 		width: 100%;
@@ -397,16 +758,18 @@
 							<span class="icon-bar"></span>
 						</button>
 						<img class="navbar-brand" src="images/KDH_logo_b.png"/>
+						
 					</div>	
 					<div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
-						
-						<a class="navbar-logo hidden-xs" href="#home" >
-							<img src="images/KDH_logo_a.png" />
-						</a>
 
 						<ul class="nav navbar-nav pull-right">
-						
-							<li class="active hidden-sm hidden-md hidden-lg"> <a href="#home"><i class="">Home</i></a></li>
+							
+							<li class="active visible-xs visible-sm">
+								<a href="#home">
+									<i class="">Home</i>
+									<img src="images/option_underline.png" class="hidden-xs" style="width: 53px; height: 6px;"/>
+								</a>
+							</li>
 							
 							<li><a href="#about"> <i class="">About</i><img src="images/option_underline.png" class="hidden-xs" style="width: 53px; height: 6px;"/></a> </li>
 							<li><a href="#event"> <i class="">Event</i><img src="images/option_underline.png" class="hidden-xs" style="width: 53px; height: 6px;"/></a> </li> 
@@ -417,6 +780,10 @@
 							<li><a href="#contact"> <i class="">Contact</i><img src="images/option_underline.png" class="hidden-xs" style="width: 58px; height: 6px;"/></a> </li>
 							
 						</ul>
+						<a class="hidden-sm hidden-xs" href="#home" >
+							<img id="KDH_logo_a" src="images/KDH_logo_a.png" />
+						</a>
+						
 					</div>
 				
 				</div>				
@@ -466,20 +833,20 @@
 			<div class="container-fluid">
 				<div class="row">
 				
-					<div class="col-md-4 col-first">
+					<div class="col-md-4 col-sm-5 col-first">
 						<div class="about-title section-title red">About Us</div>
 						<div class="about-container">
-							KDH's hybrid DNA of the engineering house and the<br/>
-							service vendor guarantees the most ideal solution for<br/>
-							product design optimized for the digital helmet devices.<br/>
-							Turning your requirements of marketing purposes into the<br/>
-							technical and manufacturing specifications.  We design<br/>
-							and manage your projects in hardware and software<br/>
-							development from the beginning to mass production, from<br/>
+							KDH's hybrid DNA of the engineering house and the
+							service vendor guarantees the most ideal solution for
+							product design optimized for the digital helmet devices.
+							Turning your requirements of marketing purposes into the
+							technical and manufacturing specifications.  We design
+							and manage your projects in hardware and software
+							development from the beginning to mass production, from
 							logistics to the after­sales technical support process.<br/>
 						</div>
 					</div>
-					<div class="col-md-8 col-last"></div>
+					<div class="col-md-8 col-sm-7 col-last"></div>
 					
 				</div>
 			</div>
@@ -490,8 +857,8 @@
 			<div class="container-fluid">
 				<div class="row">
 				
-					<div class="col-md-8 col-first"></div>
-					<div class="col-md-4 col-last">
+					<div class="col-lg-6 col-md-5 col-sm-3 col-first"></div>
+					<div class="col-lg-6 col-md-7 col-sm-9 col-last">
 						<div class="event-title section-title green">Press & Recent Events</div>
 						<div class="event-container">
 							<span class="event-subtitle">KDH Design Closes $1M Seed Financing, Led by Hazel Asset<br/> Management and Vectr Ventures</span><br/>
@@ -520,23 +887,21 @@
 		
 		<!-- services -->
 		<section class="slice" id="services">
-			<div class="container-fluid">
-				<div class="row">
+			<div class="container">
+				<div class="row services-row">
 					
-					<div class="col-md-1 col-first"></div>
-					<div class="col-md-1">
+					<div class="col-lg-1 col-md-12 services-lb">
 						<div class="services-title section-title yellow">Our services</div>
 					</div>
-					<div class="col-md-2">
-						<div class="img-list">
+					<div class="col-lg-5 col-md-6 services-lb">
+					
+						<div class="services-imgs">
 							<img src="images/4_service/service_a.png" style="margin-bottom: 10px;" />
 							<img src="images/4_service/service_b.png" style="margin-bottom: 10px;" />
 							<img src="images/4_service/service_c.png" />
 						</div>
-					</div>
-					<div class="col-md-2 red">
-						<div class="msg-list">
-							<div class="msg" style="margin-bottom: 10px; padding-top: 14px;">
+						<div class="services-msgs red">
+							<div class="services-msg" style="margin-bottom: 10px; padding-top: 14px;">
 								KDH offer a Full Service digital
 								helmet design. We applied
 								the best-in-industry design
@@ -547,7 +912,7 @@
 								fit into different types of motorcycle
 								helmet.
 							</div>
-							<div class="msg" style="margin-bottom: 10px;">
+							<div class="services-msg" style="margin-bottom: 10px;">
 								KDH owns an in-house optic
 								design team able to make different
 								HUD design at different
@@ -556,7 +921,7 @@
 								display images to the
 								motorcyclist.
 							</div>
-							<div class="msg">
+							<div class="services-msg">
 								KDH sensors collects data from
 								the motorcycle and parts e.g. tires,
 								and the road & weather conditions
@@ -569,17 +934,18 @@
 								recent years.
 							</div>
 						</div>
+						
 					</div>
-					<div class="col-md-2">
-						<div class="img-list">
+					<div class="col-lg-1 visible-lg services-rb"></div>
+					<div class="col-lg-5 col-md-6 services-rb">
+					
+						<div class="services-imgs">
 							<img src="images/4_service/service_d.png" style="margin-bottom: 10px;" />
 							<img src="images/4_service/service_e.png" style="margin-bottom: 10px;" />
 							<img src="images/4_service/service_f.png" />
 						</div>
-					</div>
-					<div class="col-md-2 green">
-						<div class="msg-list">
-							<div class="msg" style="margin-bottom: 10px; padding-top: 14px;">
+						<div class="services-msgs green">
+							<div class="services-msg" style="margin-bottom: 10px; padding-top: 14px;">
 								Using the gestural interface
 								and voice control, an intuitive
 								UI displays the supportive
@@ -589,7 +955,7 @@
 								watch front & rear camera
 								views anytime.
 							</div>
-							<div class="msg" style="margin-bottom: 10px;">
+							<div class="services-msg" style="margin-bottom: 10px;">
 								KDH Testing Procedure provides
 								our helmet design a
 								reliable testing process while
@@ -597,7 +963,7 @@
 								safety regulations, and electronic
 								certification tests.
 							</div>
-							<div class="msg">
+							<div class="services-msg">
 								KDH will connect the motorcyclists
 								and car drivers to the
 								cloud and manage to calculate
@@ -609,22 +975,22 @@
 								also for security control.
 							</div>
 						</div>
+						
 					</div>
-					<div class="col-md-1 col-last"></div>
 					
 				</div>
 			</div>
 		</section> <!-- #/services --> 
 
 		<!-- features -->
-		<section class="slice color1" id="features">
+		<section class="slice" id="features">
 			<div class="container-fluid">
 				<div class="row">
 					
-					<div class="col-md-3 col-first">
+					<div class="col-lg-3 col-md-4 col-sm-5 col-xs-7 col-first">
 						<div class="features-title section-title red">Features</div>
 					</div>
-					<div class="col-md-9 col-last"></div>
+					<div class="col-lg-9 col-md-8 col-sm-7 col-xs-5 col-last"></div>
 					
 				</div>
 			</div>
@@ -635,8 +1001,8 @@
 			<div class="container-fluid">
 				<div class="row">
 					
-					<div class="col-md-1 col-first"></div>
-					<div class="col-md-5">
+					<div class="col-sm-1 col-first"></div>
+					<div class="col-sm-5">
 						<div class="row">
 							<div class="col-md-12"><img id="Partners_a" src="images/6_partner/Partners_a.png"></div>	
 						</div>
@@ -651,8 +1017,8 @@
 							<div class="col-md-4"><div class="logo-rim"><img id="logo_foxconn" src="images/6_partner/foxconn.png"></div></div>	
 						</div>
 					</div>
-					<div class="col-md-1"></div>
-					<div class="col-md-5 col-last" style="padding-right: 0;">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-5 col-last">
 						<div class="row">
 						
 							<div class="col-md-10">
@@ -668,7 +1034,7 @@
 							
 						</div>
 						<div class="row">
-							<div class="col-md-12" style="padding: 0;"><div class="partner-title section-title green">Our Partner</div></div>
+							<div class="col-md-12 col-last"><div class="partner-title section-title green">Our Partner</div></div>
 						</div>
 					</div>
 					
@@ -681,10 +1047,10 @@
 			<div class="container-fluid">
 				<div class="row">
 					
-					<div class="col-md-3 col-first">
+					<div class="col-lg-3 col-md-4 col-sm-5 col-first">
 						<div class="organisation-title section-title red">Our Team</div>
 					</div>
-					<div class="col-md-9 col-last"></div>
+					<div class="col-lg-9 col-md-8 col-sm-7 col-last"></div>
 					
 				</div>
 			</div>
@@ -708,22 +1074,22 @@
 				</div>
 				<div class="row workers">
 					
-					<div class="col-md-3"><img src="images/7_team/Jeremy.png" /></div>
-					<div class="col-md-3 team-yellow">
+					<div class="col-md-3 col-sm-6"><img src="images/7_team/Jeremy.png" /></div>
+					<div class="col-md-3 col-sm-6 team-yellow">
 						<div class="worker-info">
 							<span class="worker-name">Jeremy Lu</span>
 							<hr/>
 							<span class="worker-function">Managing Director & Founder</span>
 						</div>
 					</div>
-					<div class="col-md-3 team-green">
+					<div class="col-md-3 col-sm-6 team-green">
 						<div class="worker-info">
 							<span class="worker-name">Younger L. Liang</span>
 							<hr/>
 							<span class="worker-function">CTO & Co-founder</span>
 						</div>
 					</div>
-					<div class="col-md-3"><img src="images/7_team/Younger.png" /></div>
+					<div class="col-md-3 col-sm-6"><img src="images/7_team/Younger.png" /></div>
 					
 				</div>
 				
